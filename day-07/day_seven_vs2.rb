@@ -1,6 +1,6 @@
 bags = File.readlines('data.txt').map do |line|
-  bag = line[/^(\w+ \w+)/]
-  content = line.scan(/(\d+) (\w+ \w+)/).map { |num, name| [num.to_i, name] }
+ pp bag = line[/^(\w+ \w+)/]
+pp  content = line.scan(/(\d+) (\w+ \w+)/).map { |num, name| [num.to_i, name] }
   [bag, content]
 end.to_h
 
